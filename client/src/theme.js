@@ -54,14 +54,14 @@ export const theme = createTheme({
     },
     typography: {
         fontFamily: ["Fauna One", "sans-serif"].join(","),
-        fontSIze: 11,
+        fontSize: 11,
         h1: {
             fontFamily: ["Cinzel", "sans-serif"].join(","),
-            fontSIze: 48,
+            fontSIze: 36,
         },
         h2: {
             fontFamily: ["Cinzel", "sans-serif"].join(","),
-            fontSIze: 36,
+            fontSIze: 24,
         },
         h3: {
             fontFamily: ["Cinzel", "sans-serif"].join(","),

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import CloseIcon from "@mui/icons-material/Close";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { shades } from "../theme";
-import { addToCart, decreaseCount, increaseCount } from "../store";
+import { addToCart } from "../store";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useTheme } from "@emotion/react";
@@ -32,7 +31,7 @@ const Item = ({ item, width }) => {
     return (
         <Box width={width}>
             <Box
-                position="realtive"
+                position="relative"
                 onMouseOver={() => {
                     setIsHovered(true);
                 }}
@@ -49,7 +48,7 @@ const Item = ({ item, width }) => {
                     style={{ cursor: "pointer" }}
                 />
                 <Box
-                    display={isHovered ? "blocked" : "none"}
+                    display={isHovered ? "block" : "none"}
                     position="absolute"
                     bottom="10%"
                     left="0"

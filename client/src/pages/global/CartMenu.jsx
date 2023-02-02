@@ -55,7 +55,7 @@ const CartMenu = () => {
                 <Box padding="30px" overflow="auto" height="100%">
                     {/* HEADER */}
                     <FlexBox mb="15px">
-                        <Typography variant="h3">
+                        <Typography variant="h4">
                             SHOPPING BAG ({cart.length})
                         </Typography>
                         <IconButton onClick={() => dispatch(setIsCartOpen({}))}>
